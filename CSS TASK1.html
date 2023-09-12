@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: auto;
+            width: 80%;
+            border-radius: 10px; /* Set the table's border radius */
+            overflow: hidden; 
+            background-color:rgb(0, 255, 191);
+        }
+        th, td {
+    padding: 10px; /* Add padding to cells for spacing */
+    border: 1px solid #000; /* Add a border to cells (adjust the style as needed) */
+    border-radius: 10px; /* Set the cell's border radius */
+  }
+
+  
+  table,th,td{
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+         
+        div.square{
+            border: 3px solid rgb(127, 203, 13);
+            border-radius: 13px;
+            height: 45px; 
+            width: 70px; 
+        }    
+        div.square1{
+            border: 3px solid rgb(127, 203, 13);
+            border-radius: 13px;
+            height: 45px; 
+            width: 70px; 
+        }
+        div.rect{
+            border: 3px solid rgb(127, 203, 13);
+            height: 45px; 
+            width: 70px; 
+        }
+        div.x{
+            border: 3px solid rgb(127, 203, 13);
+            height: 50px; 
+            border-radius: 5px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 20px;
+            width: 70px; 
+        }
+        div.circle{
+            height: 50px;
+            width: 75px;
+            border: 3px solid rgb(127, 203, 13);            
+            border-radius: 50% 
+        }
+        div{
+            margin-top: 5px;
+            margin-bottom:10px;
+            margin-right: 10px;
+        }
+        .main {
+            display: flex;
+            margin-left: 150px;
+        }
+    
+  
+
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr style="text-align: center;">
+            <td>Firstname</td>
+            <td>Lastname</td>
+            <td>Age</td>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+
+    <div class="main">
+        <div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="circle"></div>
+        </div>
+        <div>
+            <div class="square"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+        </div>
+        <div>
+            <div class="square1"></div>
+            <div class="square1"></div>
+            <div class="x"></div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>

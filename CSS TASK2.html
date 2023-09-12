@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TASK-2</title>
+    <style>
+        p {
+            font-size: 1.7em;
+            font-weight: 600;
+        }
+        .container-2 {
+            display: grid;
+            grid-template-columns:auto auto auto auto;
+            border: 1px solid black;
+            padding: 15px;
+        }
+        .item   {
+            width: 200px;
+            height: 50px;
+            background-color: lightgray;
+            text-align: center;
+            padding-top: 25px;
+            border-right: 2px solid blue; 
+        }
+        .item:last-child {
+            border-right: none;
+        }
+        .item:hover {
+            background-color:grey;
+            cursor: pointer;
+        }
+        
+        .container-1 .item {
+            background-color: lightblue;
+            text-align: left;
+            padding-left: 10%;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .container-1 .item:hover {
+            cursor: pointer;
+            background-color: #fea500;
+        }
+        a {
+            font-weight: 550;
+            font-size: 1.4em;
+            text-decoration: none;
+        }
+    </style></head>
+<body>
+    
+    <div style="margin-top: 8%;display: grid;grid-template-columns: auto auto; justify-content: space-around;">
+        <div class="cont-check">
+            <div><p>Vertical navigation Bar</p></div>
+            <div class="container-1" style="margin-top: 50px;">
+                <div class="item"><a href="">Home</a></div>
+                <div class="item"><a href="">Java</a></div>
+                <div class="item"><a href="">CSS</a></div>
+                <div class="item"><a href="">HTML</a></div>
+                <div class="item"><a href="">Bootstrap</a></div>
+            </div>
+        </div>
+        <div class="cont-check">
+            <div style="height: 85px;"><p>Horizontal navigation Bar</p></div>
+            <div class="container-2">
+                <div class="item"><a href="">Home</a></div>
+                <div class="item"><a href="">Java</a></div>
+                <div class="item"><a href="">HTML</a></div>
+                <div class="item"><a href="">CSS</a></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

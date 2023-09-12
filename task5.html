@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+    border-collapse: collapse; /* Ensure that cell borders collapse into one another */
+    margin: auto;
+    }
+    th{
+        text-align: left;
+    }
+    
+    #website{
+        text-align: right;
+    }
+    
+.remove-border td {
+  border: none;
+  text-align: center;
+  
+}
+
+.match {
+  width: 100%; /* Make the input fields take up the entire cell width */
+
+  padding: 0; /* Remove padding if needed */
+  margin: 0; /* Remove margins if needed */
+}
+td{
+    padding: 1px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <table border="1px">
+       <form >
+        <tr>
+            <th>First Name</th>
+            <td><input type="text" class="match"></td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td><input type="text" class="match"></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" class="match"></td>
+        </tr>
+        <tr>
+            <th>password</th>
+            <td><input type="password" class="match"></td>
+        </tr>
+        <tr>
+            <th> Re enter password</th>
+            <td><input type="password" class="match"></td>
+        </tr>
+           <th>Gender</th>
+           <td>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <hr>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+           </td>
+           <tr>
+            <th>Age</th>
+            <td><input type="number" class="match"></td>
+           </tr>
+           <tr>
+            <th>Address</th>
+            <td><textarea name="address" id="address" cols="30" rows="5" class="match"></textarea></td>
+           </tr>
+           <tr>
+            <th>State</th>
+            <td><input type="text" class="match"></td>
+        </tr>
+           <tr>
+            <th>Country</th>
+            <td>
+                <select id="country" name="country">
+                  <option value="choose">Choose your country</option>  
+                  <option value="india">India</option>
+                  <option value="ca">Canada</option>
+                  <option value="uk">United Kingdom</option>
+                  <option value="au">Australia</option>
+                  <!-- Add more countries as needed -->
+                </select>
+                </td>
+           </tr>
+           <tr>
+            <th>Languages known</th>
+            <td>
+                <label for="english">English</label>
+                <input type="checkbox" id="english" name="languages" value="english">
+                
+                <label for="kannada">kannada</label>
+                <input type="checkbox" id="kannada" name="languages" value="kannada">
+                
+                <label for="Hindi">Hindi</label>
+                <input type="checkbox" id="Hindi" name="languages" value="Hindi">
+
+                <label for="Telugu">Telugu</label>
+                <input type="checkbox" name="languages" id="Telugu" value="Telugu">
+            </td>
+           </tr>
+           <tr >
+            <td colspan="2">
+                <input type="checkbox" id="accept" name="declare" value="Hereby">
+                <label for="declare">Hereby I delare all the given detalis are true</label>
+                
+            </td>
+           </tr>
+           <tr>
+            <td colspan="2" id="website">login to <a href="">ehthus</a>website</td>
+           </tr>
+           <tr class="remove-border">
+            <td colspan="2"><button>Register</button></td>
+           </tr>
+       </form>
+    </table>
+
+    
+</body>
+</html>

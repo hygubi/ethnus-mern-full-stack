@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TASK-4</title>
+    
+        <style>
+            .container {
+                margin-top: 3%;
+                display: grid;
+                grid-template-columns: 300px 1fr;
+            }
+    
+            .item {
+                width: 100px;
+                height: 100px;
+                display: block;
+                margin-bottom: 20px;
+                border: none;
+                transition: .5s;
+                border-radius: 10%;
+            }
+    
+            .item:hover {
+                transform: scale(120%,120%);
+                transition: .5s;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <div class="cont1">
+                <button class="item" style="background-color: #04a96e;"></button>
+                <button class="item" style="background-color: #2296f2;"></button>
+                <button class="item" style="background-color: #f54237;"></button>
+                <button class="item" style="background-color: #555555;"></button>
+            </div>
+            <div class="cont2">
+                <h1 style="margin-top: 0; margin-bottom: 35px;">Hoverable Sidenav Buttons</h1>
+                <p style="font-size: 1.2em;">Hover over the buttons in the left side navigation to open them.</p>
+            </div>
+        </div>
+    
+    </body>
+</html>
